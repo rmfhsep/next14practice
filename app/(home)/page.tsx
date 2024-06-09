@@ -2,15 +2,14 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Movie from "../../components/movie";
 import styles from "../../styles/home.module.css";
+import { API_SERVER } from "../constants";
 
 export const metadata = {
   title: "Home",
 };
 
 const getMovies = async () => {
-  const res = await fetch(
-    "https://nomad-movies.nomadcoders.workers.dev/movies"
-  );
+  const res = await fetch(API_SERVER);
   const json = await res.json();
   return json;
 };

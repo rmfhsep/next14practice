@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "../styles/movie-info.module.css";
+import { API_SERVER } from "../app/constants";
 
 export async function getMovie(id: string) {
-  const res = await fetch(
-    `${"https://nomad-movies.nomadcoders.workers.dev/movies"}/${id}`
-  );
+  const res = await fetch(`${API_SERVER}/${id}`);
   return res.json();
 }
 
