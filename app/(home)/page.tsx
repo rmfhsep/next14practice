@@ -7,8 +7,6 @@ export const metadata = {
   title: "Home",
 };
 
-export const API_SERVER = "https://nomad-movies.nomadcoders.workers.dev/movies";
-
 const getMovies = async () => {
   const res = await fetch(
     "https://nomad-movies.nomadcoders.workers.dev/movies"
