@@ -10,7 +10,9 @@ export const metadata = {
 export const SERVER = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 const getMovies = async () => {
-  const res = await fetch(SERVER);
+  const res = await fetch(
+    "https://nomad-movies.nomadcoders.workers.dev/movies"
+  );
   const json = await res.json();
   return json;
 };
