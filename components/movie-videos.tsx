@@ -1,9 +1,9 @@
 import React from "react";
-import { SERVER } from "../app/(home)/page";
+import { API_SERVER } from "../app/(home)/page";
 import styles from "../styles/movie-videos.module.css";
 
 async function getVideos(id: string) {
-  const res = await fetch(`${SERVER}/${id}/videos`);
+  const res = await fetch(`${API_SERVER}/${id}/videos`);
   return res.json();
 }
 
