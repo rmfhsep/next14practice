@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../components/navigation";
 import { Metadata } from "next";
+import "../styles/global.css";
 
 export const metadata: Metadata = {
   title: {
