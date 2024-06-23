@@ -17,6 +17,9 @@ export async function generateMetadata({ params: { id } }: IParams) {
 export default async function MovieDetail({ params: { id } }: IParams) {
   return (
     <div>
+      <div>여기는 영화 정보를 보여주는 페이지 입니다요</div>
+      <div>여기는 영화 정보를 보여주는 페이지 입니다요</div>
+      <div>여기는 영화 정보를 보여주는 페이지 입니다요</div>
       <Suspense fallback={<h1>loading movie indo</h1>}>
         <MovieInfo id={id} />
       </Suspense>
